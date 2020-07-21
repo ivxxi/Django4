@@ -1,0 +1,49 @@
+{% include 'base.html' %}
+{% load bootstrap4%}
+{%block content%}
+    <div class="container" >
+        <div class="row">
+            <div class="col m12">
+                <h4 class="center-align">{{profile.neighborhood}}</h4>
+
+            </div>
+            {% for post in posts %}
+            <div class="col s12 m6">
+             <div class="card-panel">
+               <h5>{{post.title}}</h5>
+               <p>{{post.content|truncatechars:200}}</p>
+               <a class="btn waves-effect waves-light grey" href="{% url 'post' post.id %}">Read more</a>
+             </div>
+            </div>
+            {% endfor %}
+            <div class="fixed-action-btn">
+                <a class="waves-effect waves-light btn-large purple modal-trigger"  href="#modal1">post</a>
+
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal" style="max-height: 800px !important;">
+          <form action="{%url 'index' %}" method='post' enctype="multipart/form-data">
+          <div class="modal-content">
+            <h4>Add a Post</h4>
+
+                {% csrf_token %}
+                {{ form }}
+
+          </div>
+          <div class="modal-footer">
+              <button type='submit' class="btn waves-effect waves-light pink" style="margin-right:20px;">Submit</button>
+          </div>
+          </form>
+        </div>
+          {% block script%}
+          <script type="text/javascript">
+              $(document).ready(function(){
+                $('.modal').modal();
+                $('select').formSelect();
+              });
+
+          </script>
+          {% endblock %}
+    </div>
+{% endblock %}
