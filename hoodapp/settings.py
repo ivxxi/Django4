@@ -52,7 +52,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 's-u!u@94+mm%))983g##5#@6n!dwb48rdgejd3!h+ooj^q55ps'
+#SECRET_KEY = '_()m4^2c9&c@ud_pe^mcu!nhcxg98$5#=1m^0g^@zjq)zw$7=p
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
@@ -117,7 +117,7 @@ WSGI_APPLICATION = 'hoodapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hood',
+        'NAME': 'neighborhood',
         'USER': 'crystal',
         'PASSWORD': '252525'
     }
