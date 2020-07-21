@@ -1,0 +1,49 @@
+{% load static %}
+<nav class="grey darken-4">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo center">neighborhood</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="{% url 'companies' %}">Companies</a></li>
+        <li> <a href="#contactsmodal" class="modal-trigger">Contacts</a> </li>
+      </ul>
+      <ul class="">
+          <li><form class="" action="{% url 'search' %}">
+            <div id="custom-search-input">
+                  <div class="input-group col-md-12 ui-widget">
+                      <input id="search" type="text" class="form-control input-lg" placeholder="Search company" name="search" />
+                  </div>
+              </div>
+        </form></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'edit_profile' user.username %}">profile</a></li>
+        <li><a href="{% url 'logout' %}">logout</a></li>
+      </ul>
+  </div>
+</nav>
+
+ <!-- Modal Structure -->
+   <div id="contactsmodal" class="modal">
+     <div class="modal-content">
+       <h4>Contacts</h4>
+       <p>health department: <br>
+        <ol>
+          <li>999</li>
+          <li>020-2222181</li>
+          <li>020-2222182</li>
+        </ol>
+       </p>
+       <br> <hr>
+       <p>police : <br>
+        <ol>
+          <li>999</li>
+          <li>112</li>
+          <li>911</li>
+        </ol>
+      </p>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+     </div>
+   </div>
