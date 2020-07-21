@@ -52,12 +52,6 @@ DEBUG =config('DEBUG',default=False,cast=bool)
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '_()m4^2c9&c@ud_pe^mcu!nhcxg98$5#=1m^0g^@zjq)zw$7=p
-
-# SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-
-#ALLOWED_HOSTS = []
 
 
 LOGIN_REDIRECT_URL = ('/')
