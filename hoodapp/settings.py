@@ -174,3 +174,4 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 print('DEBUG', DEBUG)
 print('Databases', DATABASES)
+print('mode', MODE)
