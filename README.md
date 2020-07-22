@@ -12,7 +12,9 @@
 | edit profile                             | add resident profile                      | a profile for resident is created        |
 |                                          |                                           |                                          |
 | create posts                             | Click on post button                      | user will be able to create a post that  |
-|                                          |                                           | then click on the project you want       |
+|                                          |                                           | the neighbour hood will see              |
+| add companies                            |  click on add companies                   | comanies will be displayed on the        |
+|                                          |                                           |   neighborhood company page              |
 | Log out                                  | Click on the Account button and select    | You will be logged out                   ||                                          | log out                                   |                                          |
 
 # Live Site
