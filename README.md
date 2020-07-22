@@ -2,18 +2,18 @@
 
 #### A web application that allows you to be in the loop about everything happening in your neighborhood. 
 
-# B.D.D
-The user should be able to:
-```
-+Sign in with the application to start using.
-+Set up a profile about me and a general location and my neighborhood name.
-+Find a list of different businesses in my neighborhood.
-+Find Contact Information for the health department and Police authorities near my neighborhood.
-+Create Posts that will be visible to everyone in my neighborhood.
-+Change My neighborhood when I decide to move out.
-Only view details of a single neighborhood.
-```
 
+### BDD Specifications Table
+|        User Requirements                 |           Input                           |           Output                         |
+|------------------------------------------|-------------------------------------------|------------------------------------------|
+| Sign Up/Login                            | To create a new account, click on the sign| If login is successful, the user is      |
+|                                          | up link and fill in the form details. To  | redirected to the home page              |
+|                                          | login, fill in the details                |                                          |
+| edit profile                             | add resident profile                      | a profile for resident is created        |
+|                                          |                                           |                                          |
+| create posts                             | Click on post button                      | user will be able to create a post that  |
+|                                          |                                           | then click on the project you want       |
+| Log out                                  | Click on the Account button and select    | You will be logged out                   ||                                          | log out                                   |                                          |
 
 # Live Site
 
